@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+        #wrapper {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        h1 {
+            width: 100%;
+            text-align: center;
+        }
+        p {
+            width: 100%;
+            text-align: center;
+        }
+        
+        button {
+                width: 10%;
+                display: inline-block;
+                text-align: center;
+                margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <main id="wrapper">
+        <h1>My Counter</h1>
+        <p> Current Count: {{ num_visit }}</p>
+        <button><a href='/destroy_session'> Reset</a></button>
+        <button><a href='/session'> Add to Count</a></button>
+</body>
+</html>
